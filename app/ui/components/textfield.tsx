@@ -12,9 +12,9 @@ export default function TextField({
 
     var classes = isValid ? 
                             "" :
-                            "outline outline-1 outline-red-500"
+                            "outline outline-2 outline-red-500"
     console.log(classes)
     return (
-        <input type={type} className={`${classes} font-light rounded-xl bg-slate-100`} onChange={setContent}/>
+        <input type={type} className={`${classes} font-light rounded-3xl bg-slate-100 h-12 focus:border focus:border-gray-500 focus:outline-none p-4`} onChange={setContent}/>
     )
 }

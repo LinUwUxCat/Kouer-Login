@@ -39,12 +39,12 @@ export default function Panel(){
     }
 
     return (
-        <div className={`${poppins.className} bg-white flex flex-col items-center rounded-3xl w-[600px] min-h-max m-5 justify-center`}>
-            <img src="https://fbnjznanxacfwrzlkhxl.supabase.co/storage/v1/object/public/kouer/logo.svg" className="w-1/4"></img>
-            <div className="text-green-700 text-center text-xl">Content de vous voir!</div>
+        <div className={`${poppins.className} bg-white flex flex-col rounded-3xl w-[600px] h-[66%] m-5 items-center py-20`}>
+            <img src="https://fbnjznanxacfwrzlkhxl.supabase.co/storage/v1/object/public/kouer/logo.svg" className="w-1/4 mb-4"></img>
+            <div className="text-green-700 text-center text-xl mb-12">Content de vous voir!</div>
             <LabeledField label="Adresse mail" type="text" setContent={handleEmailChange} isValid={isEmailValid}/>
             <LabeledField label="Mot de passe" type="password" setContent={handlePasswordChange} isValid={isPwValid}/>
-            { /* Mot de passe oublié - TODO */ }
+            <a className="text-left w-[60%] ml-5 font-bold text-slate-400 text-sm underline underline-offset-8 mb-12" href="#">Mot de passe oublié</a>
             <div className="text-red-500 text-align-center">{errorMessage}</div>
             <Button onClickHandler={onLoginClicked} text="Se connecter" isPrimary={true}/>
             <Button onClickHandler={onCreateAccountClicked} text="Créer un compte" isPrimary={false}/>

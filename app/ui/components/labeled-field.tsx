@@ -13,8 +13,8 @@ export default function LabeledField({
     isValid : boolean
 }){
     return (
-        <div className="labeled-field flex flex-col w-1/2">
-            <span className="font-light">{label}</span>
+        <div className="labeled-field flex flex-col w-[60%] mb-5">
+            <span className="font-normal text-slate-400 ml-3">{label}</span>
             <TextField type={type} setContent={setContent} isValid={isValid}/>
         </div>
     )
