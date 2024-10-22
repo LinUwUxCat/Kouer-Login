@@ -16,7 +16,7 @@ export default function LoginSuccess() {
             await signOut();
           }}
         >
-            <button type='submit'>Log Out</button>
+            <button type='submit' className='outline outline-1 outline-slate-500'>Log Out</button>
         </form>
         <span>Logged in successfully.</span>
         </>

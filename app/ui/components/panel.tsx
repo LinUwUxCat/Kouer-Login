@@ -40,7 +40,7 @@ export default function Panel(){
 
     return (
         <div className={`${poppins.className} bg-white flex flex-col rounded-3xl w-[600px] h-[66%] m-5 items-center py-20`}>
-            <img src="https://fbnjznanxacfwrzlkhxl.supabase.co/storage/v1/object/public/kouer/logo.svg" className="w-1/4 mb-4"></img>
+            <a href="#"  className="w-1/3 mb-4"><img src="https://fbnjznanxacfwrzlkhxl.supabase.co/storage/v1/object/public/kouer/logo.svg"></img></a>
             <div className="text-green-700 text-center text-xl mb-12">Content de vous voir!</div>
             <LabeledField label="Adresse mail" type="text" setContent={handleEmailChange} isValid={isEmailValid}/>
             <LabeledField label="Mot de passe" type="password" setContent={handlePasswordChange} isValid={isPwValid}/>
